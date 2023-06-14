@@ -1,5 +1,5 @@
 {
-  "name": "cashewsnp",
+  "name": "cashew-microsatellites-database",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
@@ -129,5 +129,5 @@
     "workbox-webpack-plugin": "^4.3.1",
     "worker-loader": "^2.0.0"
   },
-  "proxy": "https://cashewdatabase.herokuapp.com/"
+  "proxy": "https://cashew-microsatellite-database.herokuapp.com/"
 }

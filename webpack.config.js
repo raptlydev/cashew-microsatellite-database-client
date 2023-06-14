@@ -47,13 +47,13 @@ function publicPathURL(env) {
 function proxyTargetURL(env) {
     switch (env) {
         case 'development':
-            return 'https://cashewdatabase.herokuapp.com/';
+            return 'https://cashew-microsatellite-database.herokuapp.com/';
         case 'qa':
-            return 'https://cashewdatabase.herokuapp.com/';
+            return 'https://cashew-microsatellite-database.herokuapp.com/';
         case 'staging':
-            return 'https://cashewdatabase.herokuapp.com/';
+            return 'https://cashew-microsatellite-database.herokuapp.com/';
         case 'production':
-            return 'https://cashewdatabase.herokuapp.com/';
+            return 'https://cashew-microsatellite-database.herokuapp.com/';
     }
 }
 
@@ -83,7 +83,7 @@ function modeName(env) {
     }
 }
 
-const proxyTarget = !isProduction ? 'https://cashewdatabase.herokuapp.com/' : proxyTargetURL(buildMode);
+const proxyTarget = !isProduction ? 'https://cashew-microsatellite-database.herokuapp.com/' : proxyTargetURL(buildMode);
 const envPath = !isProduction ? './.env-local' : `./.env-${modeFile(buildMode)}`;
 
 console.log(".env Used:", envPath);
